@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/handler.js"></script>
+    <script src="js/init.js"></script>
+     <link rel="stylesheet" href="css/index.css">
+    <title>PONG!</title>
+</head>
+<body>
+    <main>
+        <div id="game">
+            <div class="bat" id="leftBat"></div>
+            <div class="ball" id="ball"></div>
+            <div class="bat" id="rightBat"></div>
+            <p class="score" id="playerone">0</p>
+            <p class="score" id="playertwo">0</p>
+        </div>
+        <div class="panel">
+            <section>
+                <button id="start" class="btn btn-primary" onclick="gameHandler.start(this)">Start</button>
+                <button id="stop" class="btn btn-secondary" onclick="gameHandler.stop(this)" disabled>Stop</button>
+                <button class="btn btn-secondary" onclick="gameHandler.reset(this)">Reset</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
